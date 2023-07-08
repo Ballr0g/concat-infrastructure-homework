@@ -18,7 +18,7 @@ services:
       POSTGRES_PASSWORD: "12345"
       POSTGRES_DB: "people"
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./concat-infrastructure-homework/init.sql:/docker-entrypoint-initdb.d/init.sql
 
     image: postgres:latest
     networks:
